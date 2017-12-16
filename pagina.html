@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="Js/calc.js"></script>
+	<title>PAB</title>
+
+	<script type="text/javascript" src="Js/main.js"></script>
+</head>
+<body>
+
+ <div class="formulario">
+ 	<div class="grafico">
+		<div id="tempoForm">
+
+	 		Messes <input type="text" name="Messes" id="tempoMesses">
+	 		<input type="submit" name="Tempo" id="tempo" onclick="calculaTempoHtml();" value="Tempo">
+	 		<br/>
+	 		<br/>
+
+	 		<valores id="valores">
+	 		</valores>
+
+	 		<hr id="barra" size="400px" width="1" align="left">
+
+		 	<log id="log">Log</Log>
+		 	<conteudo id="conteudo">
+	 		</conteudo>
+
+	 	</div>
+	</div>
+ </div>
+
+ <div class="renda" id="renda">
+ 	<div class="text2">
+ 		<h3>Digite a Renda!</h3>
+ 		R$<input type="text" name="renda" id="rendaCampo" class="camp">
+ 		<input type="submit" value="Pronto" class="btn" id="botaoRenda"  onclick="Start();" name="pronto1">
+ 	</div>
+ </div>
+
+<div class="dados" id="dados">
+	<div class="text3">
+		<h3>Coloque os Dados!</h3>
+		<p>Nome: *</p>
+		<br/>
+		<input type="text" name="nome" id="nomeDaDispesa" class="camp">
+		<p>Valor: *</p>
+		R$<input type="text" name="valor" id="valorDaDispesa" class="camp">
+		<p>Duração:</p>
+		<input type="text" name="duracao" id="duracaoDaDispesa" class="camp"><br /><br />
+		<input type="submit" id="pronto" value="pronto" name="pronto2" class="btn" onclick="CriaDispesa();">
+	</div>
+</div>
+
+ <img src="img/calc-open.jpg" onclick="Opencalc();" class="calc-open">
+ <div class="calc" id="calc">
+ 	<div class="visor"><input type="text" class="tela" name="tela" id="tela"></div>
+ 	<div class="tecla">
+
+ 		<input type="submit" value="9" class="num" name="9"onclick="botao( value );">
+ 		<input type="submit" value="8" class="num" name="8"onclick="botao( value );">
+ 		<input type="submit" value="7" class="num" name="7" onclick="botao( value );">
+ 		<input type="submit" value="/" class="num" name="/"onclick="botao( value );"><br />
+ 		<input type="submit" value="6" class="num" name="6"onclick="botao( value );">
+ 		<input type="submit" value="5" class="num" name="5"onclick="botao( value );">
+ 		<input type="submit" value="4" class="num" name="4"onclick="botao( value );">
+ 		<input type="submit" value="*" class="num" name="*"onclick="botao( value );"><img src="img/calc-close.jpg" onclick="closecalc();" class="calc-close"><br />
+ 		<input type="submit" value="3" class="num" name="3"onclick="botao( value );">
+ 		<input type="submit" value="2" class="num" name="2"onclick="botao( value );">
+ 		<input type="submit" value="1" class="num" name="1"onclick="botao( value );">
+ 		<input type="submit" value="+" class="num" name="+"onclick="botao( value );"><br />
+ 		<input type="submit" value="0" class="num" name="0"onclick="botao( value );">
+ 		<input type="submit" value="=" class="num" name="="onclick=" calcule(); ">
+ 		<input type="submit" value="C" class="num" name="C"onclick="reset();">
+ 		<input type="submit" value="-" class="num" name="-"onclick="botao( value );">
+
+ 	</div>
+ </div>
+</body>
+</html>
